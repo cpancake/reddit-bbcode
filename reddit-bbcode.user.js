@@ -14,7 +14,7 @@ $(document).ready(function() {
 	// We're not on a page with a post on it.
 	if(!('.commentarea').length) return;
 	// Will be filled with the compiled common.styl by sed in the makefile.
-	var cssStyle = '#reddit-bbcode-popup{width:500px;height:300px;position:fixed;top:50%;left:50%;margin-left:-250px;margin-top:-150px;background:#fff;border:1px solid #cee6ff;display:none;}#reddit-bbcode-popup textarea{width:496px;height:300px;resize:none;border:0;outline:0;resize:none;font-family:monospace}#reddit-bbcode-popup #reddit-bbcode-close{position:absolute;bottom:0;right:0}';
+	var cssStyle = '#reddit-bbcode-popup{width:500px;height:300px;position:fixed;top:50%;left:50%;margin-left:-250px;margin-top:-150px;background:#fff;border:2px solid #cee6ff;display:none;}#reddit-bbcode-popup textarea{width:496px;height:296px;resize:none;border:0;outline:0;resize:none;font-family:monospace;overflow-x:hidden}#reddit-bbcode-popup #reddit-bbcode-close{position:absolute;bottom:0;right:0}';
 	$('head').append('<style>' + cssStyle + '</style>');
 
 	// Recursive function to figure out the bbcode of an element.
