@@ -1,0 +1,24 @@
+#reddit-bbcode-popup
+	width 500px
+	height 300px
+	position fixed
+	top 50%
+	left 50%
+	margin-left -(@width / 2)
+	margin-top -(@height / 2)
+	background white
+	border 1px solid #cee6ff
+	display none
+	
+	textarea
+		width (@width - 4px)
+		height @height
+		resize none
+		border 0
+		outline 0
+		resize none
+		font-family monospace
+	#reddit-bbcode-close
+		position absolute
+		bottom 0
+		right 0
