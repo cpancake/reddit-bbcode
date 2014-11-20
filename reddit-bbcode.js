@@ -99,7 +99,7 @@ $(document).ready(function() {
 	$('#reddit-bbcode-close').click(function() { $('#reddit-bbcode-popup').hide(); });
 
 	var button_listings = [];
-	// We don't want to add a button to self posts, because there would be no point to that.
+	// We don't want to add a button to non-self posts, because there would be no point to that.
 	if($('.linklisting .thumbnail').hasClass('self'))
 		button_listings.push($('.linklisting .flat-list.buttons')[0]);
 	button_listings = button_listings.concat($.makeArray($('.commentarea .flat-list')));
